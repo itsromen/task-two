@@ -60,12 +60,12 @@ export default function Course({
       <img
         src={image}
         alt={title}
-        className="w-[300px] h-[200px] object-cover rounded-xl"
+        className="w-72 h-48 object-cover rounded-xl"
       />
       <div className="border-b border-gray-500/90 pb-4">
         <div className="flex py-4 justify-between items-center">
           <span className="text-black/90 text-sm bg-purple-500/30 px-3 rounded-sm flex items-center gap-2">
-            <span class="inline-block w-2 h-2 rounded-full bg-purple-500"></span>
+            <span className="inline-block w-2 h-2 rounded-full bg-purple-500"></span>
             {category}
           </span>
           <span className="flex items-center py-1 gap-2 bg-purple-500 px-3 rounded-lg text-sm">
