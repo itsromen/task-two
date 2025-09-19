@@ -4,7 +4,7 @@ export default function PopularCourses() {
   return (
     <div className="h-screen text-white/90 flex flex-col items-center bg-gradient-to-br from-purple-600 to-pink-400">
       <div className="text-center flex flex-col gap-4 w-[35%]">
-        <h2 className="text-4xl font-bold pt-16">Our Popular Courses</h2>
+        <h2 className="text-4xl font-bold pt-12">Our Popular Courses</h2>
         <p className="leading-6">
           Discover our most sought-after courses, carefully curated to meet the
           demands of today's learners. Dive into engaging content crafted for
