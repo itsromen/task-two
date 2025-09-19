@@ -9,7 +9,7 @@ export default function HeroStats() {
         alt="Woman wearing purple clothes"
         className="absolute h-full object-cover"
       />
-      <div className="absolute left-10 top-42 flex items-center gap-4 rounded-lg py-1 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="absolute lg:-left-8 lg:top-42 xl:left-10 xl:top-42 flex items-center gap-4 rounded-lg py-1 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-500 to-pink-500">
           <img
             src="./arrows.png "
@@ -22,7 +22,7 @@ export default function HeroStats() {
           <p>Online Courses</p>
         </div>
       </div>
-      <div className="absolute right-8 top-50 flex flex-col items-center gap-2 rounded-lg py-4 px-8 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="absolute lg:-right-8 xl:right-8 xl:top-50 flex flex-col items-center gap-2 rounded-lg py-4 px-8 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <div className="flex flex-col -space-y-1">
           <h2 className="text-center font-bold text-xl text-purple-500">
             10k+
@@ -57,7 +57,7 @@ export default function HeroStats() {
           />
         </div>
       </div>
-      <div className="absolute left-20 bottom-20 flex flex-col items-center gap-3 rounded-lg py-3 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="absolute lg:left-2 xl:left-20 bottom-20 flex flex-col items-center gap-3 rounded-lg py-3 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <div className="flex gap-4">
           <img
             src="./profile-pic3.jpg"
