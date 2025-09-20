@@ -2,7 +2,7 @@ import TestimonialCard from "./TestimonialCard";
 
 export default function Testimonials() {
   return (
-    <section className="h-[80vh] bg-gradient-to-br from-purple-500 to-pink-500 text-white/80 flex flex-col items-center justify-center gap-16">
+    <section className="h-[80vh] text-white/80 flex flex-col items-center justify-center gap-16">
       <div className="text-center w-[40%]">
         <h2 className="text-3xl font-semibold text-white/90">
           Student's Testimonials
@@ -15,7 +15,7 @@ export default function Testimonials() {
       </div>
       <div className="flex gap-8">
         <TestimonialCard
-          name="Alexa Rodriguez"
+          name="Alex Rodriguez"
           pic="./profile-pic1.jpg"
           rating={5}
           role="Web Developer"
