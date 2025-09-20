@@ -13,7 +13,7 @@ export default function TestimonialCard({
         <img
           src={pic}
           alt={`Picture of ${name}`}
-          className="w-20 h-20 object-cover rounded-full border-4 border-purple-500"
+          className="lg:w-16 lg:h-16 xl:w-20 xl:h-20 object-cover rounded-full border-4 border-purple-500"
         />
         <div>
           <h3 className="text-purple-500/80 font-bold">{name}</h3>
@@ -47,7 +47,9 @@ export default function TestimonialCard({
           </div>
         </div>
       </div>
-      <p className="text-black/80 w-[35ch] text-sm">{description}</p>
+      <p className="text-black/80 w-[35ch] lg:text-xs xl:text-sm">
+        {description}
+      </p>
     </div>
   );
 }

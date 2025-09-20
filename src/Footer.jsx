@@ -3,8 +3,8 @@ export default function Footer() {
     <footer className="px-32 pt-16 text-white/85">
       <div className="grid grid-cols-5 gap-12">
         <div className="flex flex-col gap-1.5">
-          <h2 className="text-3xl font-semibold">Etech.</h2>
-          <p className="text-sm">
+          <h2 className="lg:text-2xl xl:text-3xl font-semibold">Etech.</h2>
+          <p className="lg:text-xs xl:text-sm">
             Explore a transformative approach to skill development on our online
             learning platform.
           </p>
@@ -38,28 +38,28 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 lg:text-xs xl:text-sm">
           <h3 className="text-lg font-semibold">Company</h3>
           <a href="#">About Us</a>
           <a href="#">Services</a>
           <a href="#">Community</a>
           <a href="#">Testimonials</a>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 lg:text-xs xl:text-sm">
           <h3 className="text-lg font-semibold">Support</h3>
           <a href="#">Help Center</a>
           <a href="#">Tweet @ Us</a>
           <a href="#">Webinars</a>
           <a href="#">Feedback</a>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 lg:text-xs xl:text-sm">
           <h3 className="text-lg font-semibold">Links</h3>
           <a href="#">Courses</a>
           <a href="#">Become Teacher</a>
           <a href="#">Service</a>
           <a href="#">All in One</a>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 lg:text-xs xl:text-sm">
           <h3 className="text-lg font-semibold">Contact Us</h3>
           <p>+1(555) 123-4567</p>
           <p>etechinfo@gmail.com</p>
@@ -74,7 +74,7 @@ export default function Footer() {
           }}
         ></div>
 
-        <div className="text-center relative text-sm">
+        <div className="text-center relative lg:text-xs xl:text-sm">
           <p>Copyright &copy; 2023 Etech. All rights reserved</p>
         </div>
       </div>

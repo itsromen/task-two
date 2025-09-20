@@ -1,7 +1,7 @@
 export default function Subscribe() {
   return (
     <section className="h-[60vh] bg-white flex items-center justify-center rounded-tl-[8em] rounded-br-[8em]">
-      <div className="py-8 px-36 rounded-3xl bg-gradient-to-br from-purple-500 to-pink-500 text-center flex flex-col items-center">
+      <div className="py-8 lg:px-20 xl:px-36 rounded-3xl bg-gradient-to-br from-purple-500 to-pink-500 text-center flex flex-col items-center">
         <div className="text-white/90 w-2/3">
           <h2 className="text-3xl font-semibold">Get In Touch</h2>
           <p>
