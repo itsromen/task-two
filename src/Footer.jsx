@@ -1,14 +1,14 @@
 export default function Footer({ styles = "" }) {
   return (
-    <footer className={`px-32 pt-16 text-white/85 ${styles}`}>
-      <div className="grid grid-cols-5 gap-12">
-        <div className="grid grid-rows-5">
+    <footer className={`px-12 py-12 sm:px-4 sm:py-4 sm:px-32 sm:pt-16 text-white/85 ${styles}`}>
+      <div className="grid grid-cols-2 sm:grid-cols-5 gap-12">
+        <div className="grid grid-rows-5 max-sm:gap-2">
           <h2 className="lg:text-2xl xl:text-3xl font-semibold">Etech.</h2>
           <p className="lg:text-xs xl:text-sm row-span-3">
             Explore a transformative approach to skill development on our online
             learning platform.
           </p>
-          <div className="flex gap-2">
+          <div className="mt-1 flex gap-2">
             <a href="#">
               <span className="inline-block bg-white p-1 rounded-full">
                 <img
@@ -65,7 +65,7 @@ export default function Footer({ styles = "" }) {
           <p>etechinfo@gmail.com</p>
         </div>
       </div>
-      <div className="relative py-6 mt-6">
+      <div className="relative py-6 sm:mt-6">
         <div
           className="absolute inset-x-0 top-0 h-1 rounded-full"
           style={{

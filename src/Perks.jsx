@@ -1,39 +1,40 @@
 export default function Perks() {
+  // max-[390px]:
   return (
-    <div className="grid grid-cols-2 gap-4 font-medium">
-      <ul>
+    <div className="grid grid-cols-2 gap-2 sm:gap-4 font-medium max-sm:text-xs">
+      <ul className="max-sm:grid grid-rows-4">
         <li className="flex gap-2 items-center">
-          <span className="inline-block w-2 h-2 rounded-full bg-purple-500"></span>
+          <span className="shrink-0 inline-block w-2 h-2 rounded-full bg-purple-500"></span>
           Global Impact
         </li>
         <li className="flex gap-2 items-center">
-          <span className="inline-block w-2 h-2 rounded-full bg-purple-500"></span>
+          <span className="shrink-0 inline-block w-2 h-2 rounded-full bg-purple-500"></span>
           Flexible Schedule
         </li>
         <li className="flex gap-2 items-center">
-          <span className="inline-block w-2 h-2 rounded-full bg-purple-500"></span>
+          <span className="shrink-0 inline-block w-2 h-2 rounded-full bg-purple-500"></span>
           Innovative Teaching Tools
         </li>
         <li className="flex gap-2 items-center">
-          <span className="inline-block w-2 h-2 rounded-full bg-purple-500"></span>
+          <span className="shrink-0 inline-block w-2 h-2 rounded-full bg-purple-500"></span>
           Recognition And Reputation
         </li>
       </ul>
-      <ul>
+      <ul className="max-sm:grid grid-rows-4 gap-4">
         <li className="flex gap-2 items-center">
-          <span className="inline-block w-2 h-2 rounded-full bg-purple-500"></span>
+          <span className="shrink-0 inline-block w-2 h-2 rounded-full bg-purple-500"></span>
           Creative Freedom
         </li>
         <li className="flex gap-2 items-center">
-          <span className="inline-block w-2 h-2 rounded-full bg-purple-500"></span>
+          <span className="shrink-0 inline-block w-2 h-2 rounded-full bg-purple-500"></span>
           Monetize Your Expertise
         </li>
         <li className="flex gap-2 items-center">
-          <span className="inline-block w-2 h-2 rounded-full bg-purple-500"></span>
+          <span className="shrink-0 inline-block w-2 h-2 rounded-full bg-purple-500"></span>
           Professional Development
         </li>
         <li className="flex gap-2 items-center">
-          <span className="inline-block w-2 h-2 rounded-full bg-purple-500"></span>
+          <span className="shrink-0 inline-block w-2 h-2 rounded-full bg-purple-500"></span>
           Networking Opportunities
         </li>
       </ul>

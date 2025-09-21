@@ -24,7 +24,7 @@ export default function CartCalculations({
   }
 
   return (
-    <div className="w-96 flex flex-col gap-6 p-4">
+    <div className="justify-self-center sm:w-96 flex flex-col gap-6 p-4">
       <h2 className="text-3xl ">Order Summary</h2>
       <div className="border-b pb-6">
         <div className="flex items-center justify-between">

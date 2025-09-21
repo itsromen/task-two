@@ -11,7 +11,7 @@ export default function HeroCTA() {
         learning platform. Uncover a new realm of learning experiences and
         elevate your expertise in unique ways
       </p>
-      <div className="flex items-center gap-16">
+      <div className="flex items-center max-[390px]:gap-6 gap-16">
         <Button py={0.5}>Enroll Now</Button>
         <a href="#" className="flex items-center gap-2">
           <span className="inline-block rounded-full border-2 border-pink-500 p-1 bg-white">

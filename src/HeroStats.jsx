@@ -2,14 +2,14 @@ export default function HeroStats() {
   return (
     <div className="text-black/75 flex items-center justify-center relative w-full h-full">
       <span className="inline-block border-dashed rounded-full border-4 border-pink-500 p-1 bg-white">
-        <span className="h-78 w-78 sm:h-86 sm:w-86 flex rounded-full bg-gradient-to-br from-purple-500 to-pink-500"></span>
+        <span className="h-64 w-64 sm:h-86 sm:w-86 flex rounded-full bg-gradient-to-br from-purple-500 to-pink-500"></span>
       </span>
       <img
         src="./purplewoman.png"
         alt="Woman wearing purple clothes"
         className="absolute h-full object-cover"
       />
-      <div className="absolute max-sm:-left-8 max-sm:top-27 lg:-left-8 lg:top-42 xl:left-10 xl:top-42 flex items-center gap-4 rounded-lg py-1 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="max-[390px]:scale-75 absolute min-[400px]:-left-8 max-[390px]:-left-12 max-[390px]:top-18 min-[400px]:top-27 lg:-left-8 lg:top-42 xl:left-10 xl:top-42 flex items-center gap-4 rounded-lg py-1 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-500 to-pink-500">
           <img
             src="./arrows.png "
@@ -24,7 +24,7 @@ export default function HeroStats() {
           <p className="max-sm:text-xs">Online Courses</p>
         </div>
       </div>
-      <div className="absolute max-sm:-right-8 max-sm:top-35 lg:-right-8 xl:right-8 xl:top-50 flex flex-col items-center gap-2 rounded-lg py-2 sm:py-4 px-6 sm:px-8 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="max-[390px]:scale-75 absolute max-[390px]:-right-10 min-[400px]:-right-8 min-[400px]:top-35 lg:-right-8 xl:right-8 xl:top-50 flex flex-col items-center gap-2 rounded-lg py-2 sm:py-4 px-6 sm:px-8 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <div className="flex flex-col -space-y-1">
           <h2 className="text-center font-bold text-lg sm:text-xl text-purple-500">
             10k+
@@ -59,7 +59,7 @@ export default function HeroStats() {
           />
         </div>
       </div>
-      <div className="absolute max-sm:-left-8 max-sm:bottom-8 lg:left-2 xl:left-20 bottom-20 flex flex-col items-center gap-3 rounded-lg py-3 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="max-[390px]:scale-75 absolute max-sm:-left-8 max-sm:bottom-8 lg:left-2 xl:left-20 bottom-20 flex flex-col items-center gap-3 rounded-lg py-3 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <div className="flex gap-4">
           <img
             src="./profile-pic3.jpg"

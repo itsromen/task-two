@@ -41,7 +41,7 @@ export default function CartItem({
     localStorage.setItem("carts", JSON.stringify(newCarts));
   }
   return (
-    <div className="h-48 w-96 grid grid-cols-2 gap-4">
+    <div className="max-sm:border-b w-9/10 max-sm:mx-auto sm:h-48 sm:w-96 grid grid-cols-2 gap-4">
       <img
         src={image}
         alt={title}
@@ -49,14 +49,14 @@ export default function CartItem({
       />
       <div className="py-8 grid grid-rows-2 items-center">
         <div>
-          <h3 className="font-semibold truncate w-96">{title}</h3>
+          <h3 className="font-semibold sm:truncate sm:w-96">{title}</h3>
           {count >= quantity ? (
             <p className="text-green-500 text-sm">In Stock</p>
           ) : (
             <p className="text-red-500 text-sm">Out of Stock</p>
           )}
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex max-sm:flex-col items-start max-sm:gap-2 sm:items-center justify-between">
           <div className="flex items-center gap-4 bg-purple-500 py-1 px-4 rounded-xl text-white/90">
             <button
               onClick={handleQuantityChange}

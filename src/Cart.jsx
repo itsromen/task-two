@@ -10,7 +10,7 @@ export default function Cart({
   setCarts,
 }) {
   return (
-    <>
+    <div className="flex-1">
       <div className="flex justify-between">
         <button
           onClick={() => onNavigate("home")}
@@ -25,7 +25,7 @@ export default function Cart({
           Products
         </button>
       </div>
-      <main className="grid grid-cols-2">
+      <main className="flex-auto flex grid xl:grid-cols-2">
         <div>
           {cartItems.map((i) => (
             <CartItem
@@ -49,6 +49,6 @@ export default function Cart({
           itemPrices={itemPrices}
         />
       </main>
-    </>
+    </div>
   );
 }

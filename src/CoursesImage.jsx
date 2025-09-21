@@ -1,6 +1,6 @@
 export default function CoursesImage() {
   return (
-    <div className="max-sm:h-4/5 max-sm:w-9/10 xl:h-full justify-self-center p-1.5 rounded-[125px] border-3 border-pink-500 border-dashed grid grid-rows-2 grid-cols-2">
+    <div className="relative max-[390px]:right-2 max-[390px]:h-7/10 max-[390px]:w-4/5 min-[400px]:h-4/5 min-[400px]:w-9/10 xl:h-full justify-self-center p-1.5 rounded-[125px] border-3 border-pink-500 border-dashed grid grid-rows-2 grid-cols-2">
       <span className="relative lg:w-48 lg:h-48 xl:w-54 xl:h-54 bg-[#d66fa6] rounded-br-[125px] rounded-tl-[125px] overflow-hidden">
         <img
           src="./purplewoman.png"

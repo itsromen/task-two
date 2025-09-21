@@ -2,8 +2,8 @@ import Course from "./Course";
 
 export default function PopularCourses() {
   return (
-    <div className="h-screen text-white/90 flex flex-col items-center bg-gradient-to-br from-purple-600 to-pink-400">
-      <div className="text-center flex flex-col gap-4 lg:w-[40%] xl:w-[35%]">
+    <div className="p-12 sm:p-0 sm:h-screen text-white/90 flex flex-col items-center bg-gradient-to-br from-purple-600 to-pink-400">
+      <div className="text-center flex flex-col gap-4 lg:w-[40%] xl:w-[35%] mb-12 sm:mb-0">
         <h2 className="text-4xl font-bold lg:pt-8 xl:pt-12">
           Our Popular Courses
         </h2>
@@ -13,7 +13,7 @@ export default function PopularCourses() {
           success in every step of your educational journey.
         </p>
       </div>
-      <div className="flex gap-8 lg:py-4 xl:py-8">
+      <div className="flex flex-col sm:flex-row gap-8 lg:py-4 xl:py-8">
         <Course
           image="./webdev.jpg"
           category="Web Design"

@@ -109,7 +109,7 @@ export default function App() {
       )}
 
       {isLoggedIn && page === "cart" && recentCart && (
-        <>
+        <div className="flex flex-col min-h-screen">
           <Cart
             onNavigate={setPage}
             cartItems={cartItems}
@@ -120,7 +120,7 @@ export default function App() {
             currentUser={currentUser}
           />
           <Footer styles="bg-gradient-to-br from-purple-500 via-pink-500 to-purple-500" />
-        </>
+        </div>
       )}
 
       {isLoggedIn && page === "home" && (
