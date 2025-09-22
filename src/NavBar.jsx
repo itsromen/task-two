@@ -9,7 +9,7 @@ export default function NavBar({ onLogout, onNavigate }) {
   return (
     <nav className="sm:flex w-[90%] sm:w-[80%] justify-between items-center mt-3 sm:mt-6">
       <h2 className="font-bold text-3xl">Etech.</h2>
-      <ul className="hidden sm:flex gap-8">
+      <ul className="hidden lg:flex gap-8">
         <li>
           <span className="mr-2">Courses</span>
           <img

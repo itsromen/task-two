@@ -2,12 +2,12 @@ import BenefitCard from "./BenefitCard";
 
 export default function Benefits() {
   return (
-    <div className="w-9/10 max-sm:px-4 text-black/70 flex flex-col gap-4">
-      <h1 className="font-bold text-2xl sm:text-3xl w-[22ch]">
+    <div className="justify-self-center min-[924px]:w-9/10 max-sm:px-4 text-black/70 flex flex-col gap-4">
+      <h1 className="font-bold max-[380px]:text-xl text-2xl sm:text-3xl w-[22ch]">
         <span className="text-purple-500/70">Benefits</span> From Our Online
         Learning
       </h1>
-      <div className="grid grid-rows-4 sm:flex sm:flex-col sm:gap-4">
+      <div className="grid grid-rows-4 max-sm:text-xs sm:flex sm:flex-col gap-4">
         <BenefitCard
           width={8}
           logo="./graduate-hat.png"

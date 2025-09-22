@@ -60,7 +60,7 @@ export default function Course({
       <img
         src={image}
         alt={title}
-        className="lg:w-64 lg:h-36 xl:w-72 xl:h-48 object-cover rounded-xl"
+        className="w-64 h-36 xl:w-72 xl:h-48 object-cover rounded-xl"
       />
       <div className="border-b border-gray-500/90 pb-4">
         <div className="flex py-4 justify-between items-center">

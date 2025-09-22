@@ -1,28 +1,28 @@
 export default function CoursesImage() {
   return (
-    <div className="relative max-[390px]:right-2 max-[390px]:h-7/10 max-[390px]:w-4/5 min-[400px]:h-4/5 min-[400px]:w-9/10 xl:h-full justify-self-center p-1.5 rounded-[125px] border-3 border-pink-500 border-dashed grid grid-rows-2 grid-cols-2">
-      <span className="relative lg:w-48 lg:h-48 xl:w-54 xl:h-54 bg-[#d66fa6] rounded-br-[125px] rounded-tl-[125px] overflow-hidden">
+    <div className=" justify-self-center p-1.5 m-1.5 rounded-[125px] border-3 border-pink-500 border-dashed grid grid-rows-2 grid-cols-2">
+      <span className="relative w-36 h-40 min-[360px]:w-38 min-[360px]:h-38 sm:w-48 sm:h-48 xl:w-54 xl:h-54 bg-[#d66fa6] rounded-br-[125px] rounded-tl-[125px] overflow-hidden">
         <img
           src="./purplewoman.png"
           alt="Woman wearing purple clothes"
           className="absolute bottom-0 h-[90%] object-cover"
         />
       </span>
-      <span className="relative lg:w-48 lg:h-48 xl:w-54 xl:h-54 bg-purple-500 rounded-bl-[125px] rounded-tr-[125px] overflow-hidden">
+      <span className="relative min-[360px]:w-38 min-[360px]:h-38 sm:w-48 sm:h-48 xl:w-54 xl:h-54 bg-purple-500 rounded-bl-[125px] rounded-tr-[125px] overflow-hidden">
         <img
           src="./purplewoman.png"
           alt="Woman wearing purple clothes"
           className="absolute bottom-0 h-[90%] object-cover"
         />
       </span>
-      <span className="relative lg:w-48 lg:h-48 xl:w-54 xl:h-54 bg-purple-500 rounded-bl-[125px] rounded-tr-[125px] overflow-hidden">
+      <span className="relative min-[360px]:w-38 min-[360px]:h-38 sm:w-48 sm:h-48 xl:w-54 xl:h-54 bg-purple-500 rounded-bl-[125px] rounded-tr-[125px] overflow-hidden">
         <img
           src="./purplewoman.png"
           alt="Woman wearing purple clothes"
           className="absolute bottom-0 h-[90%] object-cover"
         />
       </span>
-      <span className="relative lg:w-48 lg:h-48 xl:w-54 xl:h-54 bg-[#d66fa6] rounded-br-[125px] rounded-tl-[125px] overflow-hidden">
+      <span className="relative min-[360px]:w-38 min-[360px]:h-38 sm:w-48 sm:h-48 xl:w-54 xl:h-54 bg-[#d66fa6] rounded-br-[125px] rounded-tl-[125px] overflow-hidden">
         <img
           src="./purplewoman.png"
           alt="Woman wearing purple clothes"

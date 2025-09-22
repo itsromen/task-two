@@ -9,7 +9,7 @@ export default function SearchCourses() {
         <h1 className="text-3xl font-semibold">Search Courses</h1>
         <Search />
       </div>
-      <div className="mb-8 lg:mt-6 xl:mt-12 grid max-sm:grid-rows-2 sm:grid-cols-2 justify-items-start items-center">
+      <div className="min-sm:max-[924px]:gap-4 mb-8 min-[924px]:mt-6 xl:mt-12 grid max-[924px]:grid-rows-2 min-[924px]:grid-cols-2 justify-items-start items-center">
         <CoursesImage />
         <Benefits />
       </div>
