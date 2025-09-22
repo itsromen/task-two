@@ -12,7 +12,7 @@ export default function Search() {
         <path d="M10 2a8 8 0 105.293 14.293l5.414 5.414 1.414-1.414-5.414-5.414A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z" />
       </svg>
       <input
-        className="max-[360px]:text-xs sm:w-[40ch] pl-10 py-2 mr-4 rounded-lg"
+        className="max-[360px]:text-xs w-full sm:w-[40ch] pl-10 py-2 mr-4 rounded-lg"
         type="search"
         name="courses"
         id="courses"
