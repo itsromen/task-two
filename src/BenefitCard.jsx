@@ -13,12 +13,12 @@ export default function BenefitCard({
         <img
           src={logo}
           alt={heading}
-          className={`invert w-4 sm:w-${width} h-auto`}
+          className={`invert w-4 2xl:w-8 sm:w-${width} h-auto`}
         />
       </span>
       <div className="sm:w-[45ch] flex flex-col gap-1">
-        <h1 className="font-bold lg:text-lg xl:text-xl">{heading}</h1>
-        <p className="leading-5 lg:text-sm">{text}</p>
+        <h1 className="font-bold lg:text-lg xl:text-xl 2xl:text-2xl">{heading}</h1>
+        <p className="leading-5 lg:text-sm 2xl:text-lg">{text}</p>
       </div>
     </div>
   );

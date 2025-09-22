@@ -1,7 +1,7 @@
 export default function Perks() {
   // max-[390px]:
   return (
-    <div className="grid grid-cols-2 gap-2 sm:gap-4 font-medium max-sm:text-xs">
+    <div className="grid grid-cols-2 gap-2 sm:gap-4 font-medium max-sm:text-xs 2xl:text-lg">
       <ul className="max-sm:grid grid-rows-4">
         <li className="flex gap-2 items-center">
           <span className="shrink-0 inline-block w-2 h-2 rounded-full bg-purple-500"></span>

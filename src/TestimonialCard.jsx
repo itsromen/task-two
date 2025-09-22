@@ -8,7 +8,8 @@ export default function TestimonialCard({
   const stars = Array.from({ length: 5 }, (_, i) => i < rating);
 
   return (
-    <div className="bg-white rounded-2xl flex flex-col gap-2 sm:gap-4 p-2 sm:p-4">
+    <div className="h-full bg-white rounded-2xl flex flex-col justify-between gap-2 sm:gap-4 p-2 sm:p-4">
+      {/* Header */}
       <div className="flex items-center gap-4">
         <img
           src={pic}
@@ -47,7 +48,8 @@ export default function TestimonialCard({
           </div>
         </div>
       </div>
-      <p className="text-black/80 max-[400px]:text-xs w-[35ch] text-xs xl:text-sm">
+
+      <p className="text-black/80 text-xs sm:text-sm xl:text-base break-words w-full">
         {description}
       </p>
     </div>

@@ -14,7 +14,7 @@ export default function Search() {
         </svg>
       </label>
       <input
-        className="max-[360px]:text-xs w-full max-w-[40ch] pl-10 py-2 mr-4 rounded-lg"
+        className="max-[360px]:text-xs w-full 2xl:max-w-[15%] max-w-[40ch] pl-10 pr-2 py-2 mr-4 rounded-lg"
         type="search"
         name="courses"
         id="courses"

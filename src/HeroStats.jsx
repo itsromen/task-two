@@ -2,14 +2,14 @@ export default function HeroStats() {
   return (
     <div className="text-black/75 flex items-center justify-center relative w-full h-full">
       <span className="inline-block border-dashed rounded-full border-4 border-pink-500 p-1 bg-white">
-        <span className="h-64 w-64 sm:h-86 sm:w-86 flex rounded-full bg-gradient-to-br from-purple-500 to-pink-500"></span>
+        <span className="2xl:h-164 2xl:w-164 h-64 w-64 sm:h-86 sm:w-86 flex rounded-full bg-gradient-to-br from-purple-500 to-pink-500"></span>
       </span>
       <img
         src="./purplewoman.png"
         alt="Woman wearing purple clothes"
-        className="absolute h-full object-cover"
+        className="absolute h-9/10 bottom-0 object-cover"
       />
-      <div className="max-sm:scale-75 -left-10 top-19 absolute min-[450px]:max-[560px]:-left-1 min-[450px]:max-[560px]:top-17 min-[560px]:max-[924px]:top-24 min-[560px]:max-[924px]:left-8 min-[924px]:-left-8 min-[924px]:top-42 xl:left-10 xl:top-42 flex items-center gap-4 rounded-lg py-1 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="2xl:scale-125 2xl:top-110 2xl:left-24 max-sm:scale-75 -left-10 top-19 absolute min-[450px]:max-[560px]:-left-1 min-[450px]:max-[560px]:top-17 min-[560px]:max-[924px]:top-24 min-[560px]:max-[924px]:left-8 min-[924px]:-left-8 min-[924px]:top-42 xl:left-10 xl:top-42 flex items-center gap-4 rounded-lg py-1 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-500 to-pink-500">
           <img
             src="./arrows.png "
@@ -24,7 +24,7 @@ export default function HeroStats() {
           <p className="max-sm:text-xs">Online Courses</p>
         </div>
       </div>
-      <div className="max-sm:scale-75 absolute min-[450px]:max-[560px]:-right-2 min-[560px]:max-[924px]:right-12 max-sm:-right-10 min-[924px]:-right-8 xl:right-8 xl:top-50 flex flex-col items-center gap-2 rounded-lg py-2 sm:py-4 px-6 sm:px-8 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="2xl:scale-125 2xl:top-140 max-sm:scale-75 absolute min-[450px]:max-[560px]:-right-2 min-[560px]:max-[924px]:right-12 max-sm:-right-10 min-[924px]:-right-8 xl:right-8 xl:top-50 flex flex-col items-center gap-2 rounded-lg py-2 sm:py-4 px-6 sm:px-8 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <div className="flex flex-col -space-y-1">
           <h2 className="text-center font-bold text-lg sm:text-xl text-purple-500">
             10k+
@@ -59,7 +59,7 @@ export default function HeroStats() {
           />
         </div>
       </div>
-      <div className="max-sm:scale-75 absolute max-sm:-left-8 max-sm:bottom-8 min-[560px]:max-[924px]:left-16 min-[560px]:max-[924px]:bottom-8 min-[924px]:left-2 xl:left-20 bottom-20 flex flex-col items-center gap-3 rounded-lg py-3 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="2xl:scale-125 2xl:bottom-55 max-sm:scale-75 absolute max-sm:-left-8 max-sm:bottom-8 min-[560px]:max-[924px]:left-16 min-[560px]:max-[924px]:bottom-8 min-[924px]:left-2 xl:left-20 bottom-20 flex flex-col items-center gap-3 rounded-lg py-3 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <div className="flex gap-4">
           <img
             src="./profile-pic3.jpg"

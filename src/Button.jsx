@@ -1,5 +1,4 @@
 export default function Button({
-  textSize = 1,
   fill = true,
   children,
   py = 0.25,
@@ -10,7 +9,6 @@ export default function Button({
     <button
       onClick={clickEvent}
       style={{
-        fontSize: `${textSize}rem`,
         paddingTop: `${py}em`,
         paddingBottom: `${py}em`,
       }}
@@ -22,7 +20,6 @@ export default function Button({
     <button
       onClick={clickEvent}
       style={{
-        fontSize: `${textSize}rem`,
         paddingTop: `${py}em`,
         paddingBottom: `${py}em`,
       }}
