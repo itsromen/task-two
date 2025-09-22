@@ -21,6 +21,7 @@ export default function CartCalculations({
     newCarts[indexCart] = updatedCart;
 
     setCarts(newCarts);
+    localStorage.setItem("carts", JSON.stringify(newCarts));
   }
 
   return (
