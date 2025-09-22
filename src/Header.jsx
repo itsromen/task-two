@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 
 export default function Header({ onNavigate, onLogout }) {
   return (
-    <header className="xl:h-screen flex flex-col items-center">
+    <header className="lg:h-screen flex flex-col items-center">
       <NavBar onNavigate={onNavigate} onLogout={onLogout} />
       <div className="w-[80%] max-sm:gap-8 h-full flex flex-col min-[924px]:grid min-[924px]:grid-cols-2">
         <HeroCTA />
