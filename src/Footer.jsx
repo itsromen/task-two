@@ -3,10 +3,10 @@ export default function Footer({ styles = "" }) {
     <footer
       className={`px-12 py-12 sm:px-4 sm:py-4 sm:px-32 sm:pt-16 text-white/85 ${styles}`}
     >
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-8 sm:gap-12">
-        <div className="col-span-2 grid sm:grid-rows-5 max-sm:gap-2">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-8 sm:gap-12">
+        <div className="max-md:col-span-2 grid-rows-3 grid md:grid-rows-5 max-sm:gap-2">
           <h2 className="lg:text-2xl xl:text-3xl font-semibold">Etech.</h2>
-          <p className="text-xs xl:text-sm row-span-3">
+          <p className="text-xs xl:text-sm md:row-span-3">
             Explore a transformative approach to skill development on our online
             learning platform.
           </p>

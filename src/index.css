@@ -3,3 +3,44 @@
 * {
   font-family: "Poppins", "Times New Roman", Times, serif;
 }
+
+@media (max-width: 924px) {
+  .brands {
+    position: relative;
+  }
+
+  .item {
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    left: max(calc(150px * 5), 100%);
+    animation-name: scrollLeft;
+  }
+
+  @keyframes scrollLeft {
+    to {
+      left: -150px;
+    }
+  }
+
+  .item1 {
+    animation-delay: calc(30s / 5 * (5 - 1) * -1);
+  }
+
+  .item2 {
+    animation-delay: calc(30s / 5 * (5 - 2) * -1);
+  }
+
+  .item3 {
+    animation-delay: calc(30s / 5 * (5 - 3) * -1);
+  }
+
+  .item4 {
+    animation-delay: calc(30s / 5 * (5 - 4) * -1);
+  }
+
+  .item5 {
+    animation-delay: calc(30s / 5 * (5 - 5) * -1);
+  }
+}

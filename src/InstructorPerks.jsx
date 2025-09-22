@@ -23,7 +23,7 @@ export default function InstructorPerks() {
           </h2>
           <Perks />
         </div>
-        <span className="max-sm:self-start lg:pr-66">
+        <span className="max-sm:self-center lg:pr-66">
           <Button py={0.5}>Become an Instructor</Button>
         </span>
       </div>
