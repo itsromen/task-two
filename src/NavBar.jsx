@@ -66,7 +66,7 @@ export default function NavBar({ onLogout, onNavigate }) {
         onClick={() => setIsOpen(false)}
       >
         <div
-          className={`z-1 fixed top-0 right-0 h-dvh w-[175px] bg-white p-4 shadow-lg
+          className={`fixed top-0 right-0 h-dvh w-[175px] bg-white p-4 shadow-lg
                 transform transition-transform duration-300
                 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
           onClick={(e) => e.stopPropagation()}

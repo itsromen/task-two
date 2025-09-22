@@ -97,6 +97,7 @@ export default function Product({
       <img
         src={image}
         alt={title}
+        loading="lazy"
         className="h-48 pb-2 object-contain rounded-xl justify-self-center"
       />
       <div className="grid grid-rows-4 place-items-center">
