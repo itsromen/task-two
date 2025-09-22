@@ -5,14 +5,14 @@ export default function Search() {
     <form className="relative flex">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="w-6 h-6 absolute top-2 left-2"
+        className="w-4 h-4 min-[360px]:w-6 min-[360px]:h-6 absolute top-2 left-3"
         fill="#c241c0ff"
         viewBox="0 0 24 24"
       >
         <path d="M10 2a8 8 0 105.293 14.293l5.414 5.414 1.414-1.414-5.414-5.414A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z" />
       </svg>
       <input
-        className="max-[360px]:text-xs w-full sm:w-[40ch] pl-10 py-2 mr-4 rounded-lg"
+        className="max-[360px]:text-xs w-full max-w-[40ch] pl-10 py-2 mr-4 rounded-lg"
         type="search"
         name="courses"
         id="courses"
