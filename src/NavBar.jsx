@@ -55,9 +55,9 @@ export default function NavBar({ onLogout, onNavigate }) {
       >
         <img src="lines.svg" alt="Navbar" className="w-6" />
       </button>
-      {/* Backdrop */}
+
       <div
-        className={`fixed inset-0 bg-black/20 transition-opacity duration-300
+        className={`z-1 fixed inset-0 bg-black/20 transition-opacity duration-300
               ${
                 isOpen
                   ? "opacity-100 pointer-events-auto"
@@ -65,9 +65,8 @@ export default function NavBar({ onLogout, onNavigate }) {
               }`}
         onClick={() => setIsOpen(false)}
       >
-        {/* Drawer */}
         <div
-          className={`fixed top-0 right-0 h-dvh w-[175px] bg-white p-4 shadow-lg
+          className={`z-1 fixed top-0 right-0 h-dvh w-[175px] bg-white p-4 shadow-lg
                 transform transition-transform duration-300
                 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
           onClick={(e) => e.stopPropagation()}
