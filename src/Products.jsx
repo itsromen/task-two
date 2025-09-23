@@ -65,7 +65,7 @@ export default function Products({
           onClick={() => setOpen(true)}
           className="bg-purple-500 text-white/90 p-2 rounded-bl-xl rounded-br-xl hover:bg-pink-500 transition-colors"
         >
-          Filter By Category
+          Filter & Sort
         </button>
         <input
           value={search}
@@ -107,9 +107,9 @@ export default function Products({
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="flex flex-col items-start pl-24 justify-center gap-8 bg-white rounded-4xl w-2/5 h-2/5"
+            className="grid grid-rows-3 items-center justify-items-start content-center pl-16 py-12 bg-white rounded-4xl w-2/5 h-2/5"
           >
-            <div>
+            <div className="flex gap-2 items-center">
               <label htmlFor="sort">Sort By:</label>
               <select
                 value={sortBy[0]}
@@ -134,7 +134,7 @@ export default function Products({
                 {sortBy[1] ? "asc" : "dsc"}
               </button>
             </div>
-            <div>
+            <div className="flex gap-2 items-center">
               <label htmlFor="category">Filter by Category:</label>
               <select
                 value={category}
