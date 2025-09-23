@@ -55,33 +55,37 @@ export default function Products({
   return (
     <>
       <div className="flex justify-between">
-        <button
-          onClick={() => onNavigate("home")}
-          className="bg-purple-500 text-white/90 p-2 rounded-br-xl hover:bg-pink-500 transition-colors"
-        >
-          Home
-        </button>
-        <button
-          onClick={() => setOpen(true)}
-          className="bg-purple-500 text-white/90 p-2 rounded-bl-xl rounded-br-xl hover:bg-pink-500 transition-colors"
-        >
-          Filter & Sort
-        </button>
-        <input
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Search here..."
-          className="bg-purple-500 text-white/90 p-2 rounded-bl-xl rounded-br-xl"
-        />
-        <button
-          onClick={() => onNavigate("cart")}
-          className="bg-purple-500 text-white/90 p-2 rounded-bl-xl hover:bg-pink-500 transition-colors"
-        >
-          Cart
-        </button>
+        <div className="divide-x">
+          <button
+            onClick={() => setOpen(true)}
+            className="bg-purple-500 text-white/90 p-2 hover:bg-pink-500 transition-colors"
+          >
+            Filter & Sort
+          </button>
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search here..."
+            className="bg-purple-500 text-white/90 p-2 rounded-br-xl"
+          />
+        </div>
+        <div className="divide-x">
+          <button
+            onClick={() => onNavigate("home")}
+            className="bg-purple-500 text-white/90 p-2 rounded-bl-xl hover:bg-pink-500 transition-colors"
+          >
+            Home
+          </button>
+          <button
+            onClick={() => onNavigate("cart")}
+            className="bg-purple-500 text-white/90 p-2 hover:bg-pink-500 transition-colors"
+          >
+            Cart
+          </button>
+        </div>
       </div>
       <main className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4 mx-4 my-8 justify-items-center">
         {searchedProducts.map((p) => {
