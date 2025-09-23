@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
-export default function NavBar({ onLogout, onNavigate }) {
+export default function NavBar({ onLogout }) {
   function handleSignout() {
     localStorage.clear();
     onLogout(false);
@@ -45,9 +46,9 @@ export default function NavBar({ onLogout, onNavigate }) {
         <Button clickEvent={handleSignout} fill={false}>
           Sign Out
         </Button>
-        <span className="flex" onClick={() => onNavigate("products")}>
+        <Link to="/products" className="flex">
           <Button>Products</Button>
-        </span>
+        </Link>
       </div>
       <button
         className="lg:hidden absolute top-0 right-0"

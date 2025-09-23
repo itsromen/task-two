@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Product from "./Product";
+import { Link } from "react-router-dom";
 
 export default function Products({
   carts,
@@ -55,7 +56,7 @@ export default function Products({
   return (
     <>
       <div className="flex justify-between">
-        <div className="divide-x">
+        <div className="flex gap-0.5">
           <button
             onClick={() => setOpen(true)}
             className="bg-purple-500 text-white/90 p-2 hover:bg-pink-500 transition-colors"
@@ -72,19 +73,17 @@ export default function Products({
             className="bg-purple-500 text-white/90 p-2 rounded-br-xl"
           />
         </div>
-        <div className="divide-x">
-          <button
-            onClick={() => onNavigate("home")}
-            className="bg-purple-500 text-white/90 p-2 rounded-bl-xl hover:bg-pink-500 transition-colors"
-          >
-            Home
-          </button>
-          <button
-            onClick={() => onNavigate("cart")}
-            className="bg-purple-500 text-white/90 p-2 hover:bg-pink-500 transition-colors"
-          >
-            Cart
-          </button>
+        <div className="flex gap-0.5">
+          <Link to="/home">
+            <button className="bg-purple-500 text-white/90 p-2 rounded-bl-xl hover:bg-pink-500 transition-colors">
+              Home
+            </button>
+          </Link>
+          <Link to="/cart">
+            <button className="bg-purple-500 text-white/90 p-2 hover:bg-pink-500 transition-colors">
+              Cart
+            </button>
+          </Link>
         </div>
       </div>
       <main className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4 mx-4 my-8 justify-items-center">

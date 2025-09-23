@@ -1,9 +1,9 @@
+import { Link } from "react-router-dom";
 import CartCalculations from "./CartCalculations.jsx";
 import CartItem from "./CartItem.jsx";
 
 export default function Cart({
   recentCart,
-  onNavigate,
   cartItems,
   itemPrices,
   carts,
@@ -12,18 +12,16 @@ export default function Cart({
   return (
     <div className="flex-1">
       <div className="flex justify-between">
-        <button
-          onClick={() => onNavigate("home")}
-          className="bg-purple-500 text-white/90 p-2 rounded-br-xl hover:bg-pink-500 transition-colors"
-        >
-          Home
-        </button>
-        <button
-          onClick={() => onNavigate("products")}
-          className="bg-purple-500 text-white/90 p-2 rounded-bl-xl hover:bg-pink-500 transition-colors"
-        >
-          Products
-        </button>
+        <Link to="/home">
+          <button className="bg-purple-500 text-white/90 p-2 rounded-br-xl hover:bg-pink-500 transition-colors">
+            Home
+          </button>
+        </Link>
+        <Link to="/products">
+          <button className="bg-purple-500 text-white/90 p-2 rounded-bl-xl hover:bg-pink-500 transition-colors">
+            Products
+          </button>
+        </Link>
       </div>
       <main className="flex-auto flex grid xl:grid-cols-2">
         <div>

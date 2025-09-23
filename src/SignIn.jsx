@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function SignIn({ users, setCurrentUser, onLogin }) {
+export default function SignIn({ users, setCurrentUser, onLogin, isLoggedIn }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    isLoggedIn && navigate("/home");
+  }, []);
 
   function handleLogin(e) {
     e.preventDefault();
@@ -12,7 +18,8 @@ export default function SignIn({ users, setCurrentUser, onLogin }) {
       onLogin(true);
       localStorage.setItem("loggedIn", "true");
       setCurrentUser(user);
-      localStorage.setItem("currentUser", JSON.stringify(user)); // store the whole user object
+      localStorage.setItem("currentUser", JSON.stringify(user));
+      navigate("/home");
     }
   }
 

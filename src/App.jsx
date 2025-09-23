@@ -1,4 +1,6 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import ProtectedRoute from "./ProtectedRoute";
 import Footer from "./Footer.jsx";
 import Header from "./Header.jsx";
 import InstructorPerks from "./InstructorPerks.jsx";
@@ -16,8 +18,6 @@ export default function App() {
   const [carts, setCarts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
-  const [page, setPage] = useState("home");
   const [isLoggedIn, setIsLoggedIn] = useState(
     localStorage.getItem("loggedIn") === "true"
   );
@@ -87,55 +87,73 @@ export default function App() {
 
   return (
     <>
-      {!isLoggedIn && (
-        <SignIn
-          users={users}
-          setCurrentUser={setCurrentUser}
-          onLogin={setIsLoggedIn}
-        />
-      )}
-
-      {isLoggedIn && page === "products" && (
-        <>
-          <Products
-            products={products}
-            onNavigate={setPage}
-            carts={carts}
-            setCarts={setCarts}
-            recentCart={recentCart}
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <SignIn
+                users={users}
+                setCurrentUser={setCurrentUser}
+                onLogin={setIsLoggedIn}
+                isLoggedIn={isLoggedIn}
+              />
+            }
           />
-          <Footer styles="bg-gradient-to-br from-purple-500 via-pink-500 to-purple-500" />
-        </>
-      )}
-
-      {isLoggedIn && page === "cart" && recentCart && (
-        <div className="flex flex-col min-h-screen">
-          <Cart
-            onNavigate={setPage}
-            cartItems={cartItems}
-            carts={carts}
-            setCarts={setCarts}
-            itemPrices={itemPrices}
-            recentCart={recentCart}
-            currentUser={currentUser}
+          <Route
+            path="/home"
+            element={
+              <ProtectedRoute isLoggedIn={isLoggedIn}>
+                <main>
+                  <Header onLogout={setIsLoggedIn} />
+                  <SearchCourses />
+                  <PopularCourses />
+                  <InstructorPerks />
+                  <div className="bg-gradient-to-br from-purple-500 via-pink-500 to-purple-500">
+                    <Testimonials />
+                    <Subscribe />
+                    <Footer />
+                  </div>
+                </main>
+              </ProtectedRoute>
+            }
           />
-          <Footer styles="bg-gradient-to-br from-purple-500 via-pink-500 to-purple-500" />
-        </div>
-      )}
-
-      {isLoggedIn && page === "home" && (
-        <main>
-          <Header onLogout={setIsLoggedIn} onNavigate={setPage} />
-          <SearchCourses />
-          <PopularCourses />
-          <InstructorPerks />
-          <div className="bg-gradient-to-br from-purple-500 via-pink-500 to-purple-500">
-            <Testimonials />
-            <Subscribe />
-            <Footer />
-          </div>
-        </main>
-      )}
+          <Route
+            path="/products"
+            element={
+              <ProtectedRoute isLoggedIn={isLoggedIn}>
+                <>
+                  <Products
+                    products={products}
+                    carts={carts}
+                    setCarts={setCarts}
+                    recentCart={recentCart}
+                  />
+                  <Footer styles="bg-gradient-to-br from-purple-500 via-pink-500 to-purple-500" />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/cart"
+            element={
+              <ProtectedRoute isLoggedIn={isLoggedIn}>
+                <div className="flex flex-col min-h-screen">
+                  <Cart
+                    cartItems={cartItems}
+                    carts={carts}
+                    setCarts={setCarts}
+                    itemPrices={itemPrices}
+                    recentCart={recentCart}
+                    currentUser={currentUser}
+                  />
+                  <Footer styles="bg-gradient-to-br from-purple-500 via-pink-500 to-purple-500" />
+                </div>
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </Router>
     </>
   );
 }
