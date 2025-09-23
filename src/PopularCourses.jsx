@@ -2,18 +2,18 @@ import Course from "./Course";
 
 export default function PopularCourses() {
   return (
-    <div className="lg:h-screen p-12 sm:p-0  text-white/90 flex flex-col items-center bg-gradient-to-br from-purple-600 to-pink-400">
+    <div className="lg:py-24 p-12 xl:py-24 sm:p-0  text-white/90 flex flex-col items-center bg-gradient-to-br from-purple-600 to-pink-400">
       <div className="text-center flex flex-col gap-4 sm:w-[40%] xl:w-[35%] mb-12 sm:mb-0">
-        <h2 className="text-4xl font-bold sm:pt-8 xl:pt-12">
+        <h2 className="2xl:text-6xl text-4xl font-bold sm:pt-8 xl:pt-12">
           Our Popular Courses
         </h2>
-        <p className="leading-6">
+        <p className="leading-6 2xl:text-3xl 2xl:leading-10">
           Discover our most sought-after courses, carefully curated to meet the
           demands of today's learners. Dive into engaging content crafted for
           success in every step of your educational journey.
         </p>
       </div>
-      <div className="grid max-sm:grid-rows-3 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 py-4 xl:py-8">
+      <div className="grid max-sm:grid-rows-3 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 py-4 lg:py-8">
         <Course
           image="./webdev.jpg"
           category="Web Design"

@@ -4,7 +4,7 @@ import Search from "./Search";
 
 export default function SearchCourses() {
   return (
-    <div className="xl:h-screen relative flex flex-col items-center">
+    <div className="relative flex flex-col items-center">
       <div className="flex flex-col items-center 2xl:w-full gap-6 2xl:pt-24 pt-12">
         <h1 className="text-3xl font-semibold">Search Courses</h1>
         <Search />

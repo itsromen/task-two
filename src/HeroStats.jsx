@@ -9,7 +9,7 @@ export default function HeroStats() {
         alt="Woman wearing purple clothes"
         className="absolute h-9/10 bottom-0 object-cover"
       />
-      <div className="2xl:scale-125 2xl:top-110 2xl:left-24 max-sm:scale-75 -left-10 top-19 absolute min-[450px]:max-[560px]:-left-1 min-[450px]:max-[560px]:top-17 min-[560px]:max-[924px]:top-24 min-[560px]:max-[924px]:left-8 min-[924px]:-left-8 min-[924px]:top-42 xl:left-10 xl:top-42 flex items-center gap-4 rounded-lg py-1 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="2xl:scale-125 2xl:left-10 max-sm:scale-75 -left-10 top-19 absolute min-[450px]:max-[560px]:-left-1 min-[450px]:max-[560px]:top-17 min-[560px]:max-[924px]:top-24 min-[560px]:max-[924px]:left-8 min-[924px]:max-xl:-left-8 min-[924px]:max-xl:top-42 xl:left-10 min-xl:max-[1366px]:top-42 min-[1366px]-max:[1367px]:top-90 min-[1367px]:top-46  flex items-center gap-4 rounded-lg py-1 px-4 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-500 to-pink-500">
           <img
             src="./arrows.png "
@@ -24,7 +24,7 @@ export default function HeroStats() {
           <p className="max-sm:text-xs">Online Courses</p>
         </div>
       </div>
-      <div className="2xl:scale-125 2xl:top-140 max-sm:scale-75 absolute min-[450px]:max-[560px]:-right-2 min-[560px]:max-[924px]:right-12 max-sm:-right-10 min-[924px]:-right-8 xl:right-8 xl:top-50 flex flex-col items-center gap-2 rounded-lg py-2 sm:py-4 px-6 sm:px-8 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="2xl:scale-125 2xl:top-100 2xl:right-15 max-sm:scale-75 absolute min-[450px]:max-[560px]:-right-2 min-[560px]:max-[924px]:right-12 max-sm:-right-10 min-[924px]:-right-8 min-xl:max-[1366px]:right-8 min-xl:max-[1366px]-top-50 flex flex-col items-center gap-2 rounded-lg py-2 sm:py-4 px-6 sm:px-8 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <div className="flex flex-col -space-y-1">
           <h2 className="text-center font-bold text-lg sm:text-xl text-purple-500">
             10k+

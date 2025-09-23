@@ -115,7 +115,7 @@ export default function Testimonials() {
     setIndex((prev) => (prev === maxIndex ? 0 : prev + 1));
 
   return (
-    <section className="max-lg:py-16 lg:h-[80vh] max-sm:py-12 text-white/80 flex flex-col items-center justify-center gap-16">
+    <section className="py-16 max-sm:py-12 text-white/80 flex flex-col items-center justify-center gap-16">
       <div className="text-center sm:w-[40%]">
         <h2 className="text-3xl font-semibold text-white/90">
           Student's Testimonials
