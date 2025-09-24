@@ -24,7 +24,7 @@ export default function HeroStats() {
           <p className="max-sm:text-xs">Online Courses</p>
         </div>
       </div>
-      <div className="2xl:scale-125 2xl:top-100 2xl:right-15 max-sm:scale-75 absolute min-[450px]:max-[560px]:-right-2 min-[560px]:max-[924px]:right-12 max-sm:-right-10 min-[924px]:right-15 min-xl:max-[1366px]:right-8 min-xl:max-[1366px]-top-50 flex flex-col items-center gap-2 rounded-lg py-2 sm:py-4 px-6 sm:px-8 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+      <div className="2xl:scale-125 2xl:top-100 2xl:right-15 max-sm:scale-75 absolute min-[450px]:max-[560px]:-right-2 min-[560px]:max-[924px]:right-12 max-sm:-right-10 min-[924px]:-right-8 min-xl:max-[1366px]:right-8 min-xl:max-[1366px]-top-50 flex flex-col items-center gap-2 rounded-lg py-2 sm:py-4 px-6 sm:px-8 bg-white/70 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
         <div className="flex flex-col -space-y-1">
           <h2 className="text-center font-bold text-lg sm:text-xl text-purple-500">
             10k+

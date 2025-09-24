@@ -5,9 +5,9 @@ import NavBar from "./NavBar";
 
 export default function Header({ onNavigate, onLogout }) {
   return (
-    <header className="min-[924px]:h-screen flex flex-col items-center">
+    <header className="flex flex-col items-center">
       <NavBar onNavigate={onNavigate} onLogout={onLogout} />
-      <div className="relative w-[80%] xl:w-[90%] max-w-500 max-sm:gap-8 h-full flex flex-col min-[924px]:grid min-[924px]:grid-cols-2">
+      <div className="relative w-[80%] xl:w-[90%] max-w-500 max-sm:gap-8 min-[924px]:min-h-[600px] flex flex-col min-[924px]:grid min-[924px]:grid-cols-2">
         <HeroCTA />
         <HeroStats />
       </div>
