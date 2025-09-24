@@ -4,22 +4,42 @@ import { useNavigate } from "react-router-dom";
 export default function SignIn({ users, setCurrentUser, onLogin, isLoggedIn }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
     isLoggedIn && navigate("/home");
-  }, []);
+  }, [isLoggedIn, navigate]);
 
-  function handleLogin(e) {
+  async function handleLogin(e) {
     e.preventDefault();
+    setError(null);
 
-    const user = users.find((u) => u.username === username);
-    if (user?.password === password) {
+    try {
+      const user = users.find((u) => u.username === username);
+      if (!user || user.password !== password)
+        throw new Error("Invalid credentials");
+
+      const res = await fetch("https://fakestoreapi.com/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      });
+
+      if (!res.ok) throw new Error("Failed to fetch JWT");
+
+      const data = await res.json();
+      const token = data.token;
+
       onLogin(true);
-      localStorage.setItem("loggedIn", "true");
       setCurrentUser(user);
+      localStorage.setItem("loggedIn", "true");
       localStorage.setItem("currentUser", JSON.stringify(user));
+      localStorage.setItem("jwtToken", token);
+
       navigate("/home");
+    } catch (err) {
+      setError(err.message);
     }
   }
 
